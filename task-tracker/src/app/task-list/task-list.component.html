@@ -1,0 +1,19 @@
+<div>
+  <app-filter (statusSelected)="handleStatusSelected($event)"> </app-filter>
+
+  <div *ngFor="let task of filteredTasks" class="task-item">
+    <div class="task-header">
+      <div class="task-title">{{ task.title }}</div>
+      <div class="task-actions">
+        <button mat-icon-button color="primary" (click)="editTask(task)">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button color="warn" (click)="deleteTask(task)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+    </div>
+    <div class="task-description">{{ task.description }}</div>
+    <div class="task-status">{{ task.status }}</div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<!-- <form>
+    <div>
+        <label>Task Name</label>
+        <input type="text" name="taskName"/>
+        <label for="taskDescription">Description</label>
+        <textarea name="taskDescription"></textarea>
+      </div>
+</form> -->
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="taskName">Task Name</label>
+        <input
+          type="text"
+          id="taskName"
+          name="taskName"
+          [(ngModel)]="taskName"
+          class="form-control"
+          required/>
+        <label for="taskDescription">Description</label>
+        <textarea
+          id="taskDescription"
+          name="taskDescription"
+          [(ngModel)]="taskDescription"
+          class="form-control"
+         rows="4"
+        ></textarea>
+      </div>
+    <button mat-flat-button type="submit" class="btn btn-primary" color="warn">Submit</button>
+</form>
+<button  mat-flat-button routerLink=""  class="cancel-button" color="warn">Cancel</button>
+
+    

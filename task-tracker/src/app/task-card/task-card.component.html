@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ task.title }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>Description: {{ task.description }}</p>
+    <p>Status: {{ task.status }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <div class="task-actions">
+      <button mat-icon-button color="accent" (click)="editTask(task)">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button  color="warn" (click)="deleteTask(task)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </mat-card-actions>
+</mat-card>

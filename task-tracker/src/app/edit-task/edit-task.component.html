@@ -1,0 +1,23 @@
+<h2 mat-dialog-title>Edit Task (data.name)</h2>
+<mat-dialog-content id="editTaskContent">
+    <mat-form-field>
+        <mat-label> Task Name </mat-label>
+        <input matInput [(ngModel)]="data.title">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label> Task Description </mat-label>
+        <textarea matInput [(ngModel)]="data.description"></textarea>
+    </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button class="btn btn-primary" color="warn" (click)="cancel()"> Cancel </button>
+    <button mat-button class="btn btn-primary" color="warn" (click)="save()"> Save </button>
+</mat-dialog-actions>
+<mat-form-field>
+    <mat-label>Status</mat-label>
+    <mat-select name="statusDropdown" required [(ngModel)]="data.status">
+    @for (status of this.statuses; track $index) {
+    <mat-option [value]="status">{{status}}</mat-option>
+    }
+    </mat-select>
+</mat-form-field>

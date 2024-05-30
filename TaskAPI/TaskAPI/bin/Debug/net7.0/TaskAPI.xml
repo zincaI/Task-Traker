@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TaskAPI</name>
+    </assembly>
+    <members>
+        <member name="T:TaskAPI.Controllers.TaskController">
+            <summary>
+            task controller
+            </summary>
+        </member>
+        <member name="M:TaskAPI.Controllers.TaskController.GetTasks">
+            <summary>
+            returns all tasks
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TaskAPI.Controllers.TaskController.CreateTask(TaskAPI.Models.TaskModel)">
+            <summary>
+            adds a task
+            </summary>
+            <param name="task"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TaskAPI.Controllers.TaskController.UpdateTask(TaskAPI.Models.TaskModel)">
+            <summary>
+            replaces the task that has the matching id with the sent task
+            </summary>
+            <param name="task"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TaskAPI.Controllers.TaskController.Delete(System.Guid)">
+            <summary>
+            deletes task with matching id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

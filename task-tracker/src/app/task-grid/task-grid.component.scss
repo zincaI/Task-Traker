@@ -1,0 +1,84 @@
+.task-columns {
+    display: flex;
+  }
+  
+  .task-column {
+    flex: 1;
+    margin: 10px;
+  }
+  
+/* Container for the task list */
+.task-item {
+  background-color: #f9f9f9; /* Light background for each task */
+  border: 1px solid #e0e0e0; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding inside the task item */
+  margin-bottom: 20px; /* Space between tasks */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Header section of the task item */
+.task-header {
+  display: flex;
+  justify-content: space-between; /* Space out title and actions */
+  align-items: center; /* Center vertically */
+  margin-bottom: 10px; /* Space between header and description */
+}
+
+/* Task title styling */
+.task-title {
+  font-size: 1.25rem; /* Larger font size for title */
+  font-weight: bold; /* Bold title */
+  color: #333; /* Dark text color */
+}
+
+/* Actions container */
+.task-actions {
+  display: flex;
+  gap: 10px; /* Space between action buttons */
+}
+
+/* Task description styling */
+.task-description {
+  font-size: 1rem; /* Regular font size for description */
+  color: #666; /* Grey text color for description */
+  margin-bottom: 10px; /* Space between description and status */
+}
+
+/* Task status styling */
+.task-status {
+  font-size: 0.875rem; /* Smaller font size for status */
+  color: #999; /* Lighter grey text color for status */
+}
+
+/* Styling for the buttons */
+button[mat-icon-button] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  &.mat-primary {
+    color: #007bff; /* Primary color (blue) */
+  }
+
+  &.mat-warn {
+    color: #dc3545; /* Warn color (red) */
+  }
+
+  &:hover.mat-primary {
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+  }
+
+  &:hover.mat-warn {
+    background-color: rgba(220, 53, 69, 0.1); /* Light red background on hover */
+  }
+}
+
+/* Specific styles for the icon inside the button */
+button[mat-icon-button] mat-icon {
+  font-size: 20px;
+}

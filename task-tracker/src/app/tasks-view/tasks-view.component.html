@@ -1,0 +1,14 @@
+<p>
+  {{notificationMessage}}
+</p>
+<div class="buttons right-aligned">
+  <button mat-button (click)="isList = true"><mat-icon>view_list</mat-icon>  </button>
+  <button mat-button (click)="isList = false"><mat-icon>view_module</mat-icon>  </button>
+</div>
+<div *ngIf="isList">
+  <app-task-list></app-task-list>
+</div>
+<div *ngIf="!isList">
+  <app-task-grid></app-task-grid>
+</div>
+

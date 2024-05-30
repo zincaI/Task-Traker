@@ -1,0 +1,4 @@
+<div>
+    <!-- <button *ngFor="let status of statuses" mat-button>{{ status }}</button> -->
+    <button *ngFor="let status of statuses" mat-button color="accent" (click)="selectStatus(status)">{{ status }}</button>
+</div>

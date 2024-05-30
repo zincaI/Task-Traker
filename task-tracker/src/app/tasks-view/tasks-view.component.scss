@@ -1,0 +1,47 @@
+/* Container for the notification message */
+p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Container for the buttons */
+.buttons {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 10px; /* Space between the buttons */
+  margin-bottom: 20px;
+
+  button[mat-button] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+    mat-icon {
+      margin-right: 5px; /* Space between icon and text */
+      font-size: 20px;
+    }
+
+    &.mat-primary {
+      color: #007bff; /* Primary color (blue) */
+    }
+
+    &.mat-warn {
+      color: #dc3545; /* Warn color (red) */
+    }
+
+    &:hover {
+      background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+    }
+
+    &.mat-warn:hover {
+      background-color: rgba(220, 53, 69, 0.1); /* Light red background on hover */
+    }
+  }
+}

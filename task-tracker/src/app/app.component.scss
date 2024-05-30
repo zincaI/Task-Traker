@@ -1,0 +1,25 @@
+/* Styling for the toolbar */
+mat-toolbar {
+    background-color: #fcae1e; /* Primary color (purple) */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+  
+    span {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+  
+  
+  /* General styling */
+  body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  

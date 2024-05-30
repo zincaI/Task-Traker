@@ -1,0 +1,60 @@
+.form-group {
+  margin-bottom: 20px;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    resize: vertical;
+  }
+
+  textarea {
+    min-height: 100px; /* Adjust as needed */
+  }
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row; /* Arrange buttons in a row */
+  gap: 10px; /* Space between the buttons */
+  align-items: center; /* Align buttons vertically in the center */
+}
+
+// Define a mixin for the button styles
+@mixin button-styles($bg-color, $text-color, $hover-bg-color, $hover-text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: $hover-bg-color;
+    color: $hover-text-color;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba($bg-color, 0.5);
+  }
+}
+
+// button[type="submit"] {
+//   @include button-styles(#007bff, #fff, #0056b3, #fff);
+// }
+
+.cancel-button {
+  margin-top: 10px;
+  // @include button-styles(#f44336, #fff, #d32f2f, #fff);
+}

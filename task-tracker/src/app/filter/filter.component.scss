@@ -1,0 +1,26 @@
+/* Styling for the container div */
+div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  /* Styling for the buttons */
+  button[mat-button] {
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  
+    &.mat-accent {
+      background-color: #ff4081; /* Accent color (pink) */
+      color: white;
+  
+      &:hover {
+        background-color: #f50057; /* Darker pink on hover */
+      }
+    }
+  }
+  

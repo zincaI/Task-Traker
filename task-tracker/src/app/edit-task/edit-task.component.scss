@@ -1,0 +1,51 @@
+/* Styling for the dialog title */
+h2[mat-dialog-title] {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Container for the dialog content */
+#editTaskContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Styling for the form fields */
+mat-form-field {
+  width: 100%;
+}
+
+/* Styling for the dialog actions */
+mat-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+
+  .btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .btn-primary {
+    background-color: #6a1b9a; /* Primary color (purple) */
+    color: #fff;
+
+    &:hover {
+      background-color: #4a148c; /* Darker purple on hover */
+    }
+  }
+
+  .btn-warn {
+    background-color: #dc3545; /* Warn color (red) */
+    color: #fff;
+
+    &:hover {
+      background-color: #c82333; /* Darker red on hover */
+    }
+  }
+}
